@@ -64,6 +64,6 @@ logBtn.addEventListener("click", function() {
   body.classList.add("body-transparent");
 });
 
-
+const rel = document.querySelector("del");
 
 

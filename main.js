@@ -35,14 +35,6 @@ bar.addEventListener("click", function(){
   modal.style.display = modal.style.display === "block" ? "none" : "block";
   });
 
-window.addEventListener("click", function(e){
-  let target = e.target;
-  if(target === modal){
-    
-  modal.style.display = modal.style.display === "none"
-  }
-})
-
 const modalItems = document.querySelector(".sign-modal")
 const logBtn = document.querySelector(".logIn");
 const SignBtn = document.querySelector(".SignUp");
@@ -51,19 +43,15 @@ const body = document.body;
 
 logBtn.addEventListener("click", function(){
   event.preventDefault();
-  body.classList.add("body-transparent");
   modalItems.style.display = 'block';
 })
 closeBtn.addEventListener("click", function(){
   modalItems.style.display = "none";
-  body.classList.remove("body-transparent");
+ 
 })
 
 
-logBtn.addEventListener("click", function() {
-  body.classList.add("body-transparent");
-});
 
-const rel = document.querySelector("del");
+
 
 

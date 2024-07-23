@@ -320,10 +320,7 @@ a .fa-globe{
   border-radius: 50px;
   height: 60px; 
   width: 700px;
-  
   padding-left: 0px;
-  
-  
 }
 
 .search-bar li {
@@ -374,7 +371,7 @@ a .fa-globe{
   text-align: center;
   
 }
-  .fa-search{
+  .search-color{
 background-color: rgb(219, 29, 76);
 border-radius: 50px;
 padding: 15px;  
@@ -389,10 +386,42 @@ cursor: pointer;
    
   
 }
-.fa-search {
+.search-color {
   position: absolute;
   right: 240px;
 }
+
+.search-device{
+  display: flex;
+  
+  margin-top: 20px;
+  align-items: center; 
+  flex-shrink: 0;
+}
+.search-details{
+  list-style: none;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 13px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  height: 60px; 
+  width: 400px;
+  padding-left: 0px;
+}
+.search-spacing{
+  display: flex;
+}
+.search-bar-sm{
+  display: none;
+}
+.search-details .fa-search{
+  margin-right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
 /*---icons list-----*/
 .icon-list{
   display: flex;
@@ -507,7 +536,9 @@ overflow: scroll;
    padding-top: 38px;
    margin-left: 10px;
    font-size: 35px;
+   
 }
+
 /*------footer----*/
 .footer-box{
   background-color: #f8f3f3;
@@ -588,3 +619,56 @@ width: 180px;
   text-decoration: none;
   color:black
 }
+
+/*===========For small devices and responsives=========*/
+ @media screen and (max-width: 700px){
+  .flex-container{
+    display: none;
+  }
+  .images-content{
+    flex-direction: column;
+   }
+   .search-bar{
+    display: none;
+   }
+   .search-bar-sm{
+    display: block;
+   }
+   .footer-links{
+    display: none;
+   }
+   .footer-links-section{
+    flex-direction: column;
+   }
+   .images-gallery{
+    align-items: center;
+    margin-left: 20px;
+   }
+   .last-footer-content{
+    flex-direction: column;
+   }
+   .icon-arrow {
+    display: none;
+   }
+ }
+ @media screen and (max-width:1024px) {
+  .search-color{
+    position: absolute;
+  right: 20px;
+  }
+
+ }
+ @media screen  and (max-width:1064px){
+  .search-color{
+    position: absolute;
+  right: 150px;
+  }
+ }
+ @media screen  and (max-width:1180px){
+  .search-color{
+    position: absolute;
+  right: 50px;
+  }
+  
+  
+ }
